@@ -12,8 +12,5 @@ catch(Exception $e){
     die("Connection failed ");
 }
 $path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
-$path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);        
-
-
-echo "Connected successfully";
+$path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);
 ?> 
